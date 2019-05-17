@@ -95,8 +95,10 @@ z-index: 0;
     content: "";
     min-height: 100%;
     position: absolute;
-        border: 65px solid transparent;
     border-image: url(/wp-content/uploads/2019/05/bc_web_border.png) 25% repeat;
+    border-style: solid;
+
+border-width: 65px;
     border-image-width: 250px 300px;
     box-sizing: border-box;
     width: 100%;
@@ -106,12 +108,17 @@ z-index: 0;
       }
 }
 
-#header, #footer, #page_title, .ffmenu .section_name, .contact_position{
+#header, #footer, #page_title, .ffmenu .section_name, .section_description, .contact_position{
  font-family: nimbus-sans-extended, sans-serif;
  font-weight: 900;
   font-style: normal;
   letter-spacing: .3em;
    
+}
+
+.section_description{
+ font-size: .6em;
+ text-transform: uppercase;
 }
 
 #header{
@@ -145,7 +152,7 @@ min-height: 100%;
 
 }
  #container{
- padding-bottom: 200px;
+ padding-bottom: 100px;
   text-align: center;
 }
       
@@ -368,12 +375,23 @@ content: ", ";
 
 @media screen and (min-width:768px){
  #footer{
-  bottom:80px;
+  bottom:100px;
  }
 }
 @media screen and (max-width:991px){
  #footer{
+  position: relative;
   bottom:20px;
+ }
+ 
+  .home #footer{
+  position: absolute;
+
+ }
+ 
+  .home #footer.mobile{
+  position: relative;
+
  } 
 
 }
