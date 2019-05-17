@@ -147,7 +147,7 @@ min-height: 100%;
 
 @media screen and (min-width:768px){
   #wrapper{
- padding:75px 75px 200px 75px;
+ padding:75px 75px 25px 75px;
  }
 
 }
@@ -231,11 +231,13 @@ margin:30px;
  width:100%;
  left:0;
  display: none;
+ overflow: hidden;
 }
 
 @media screen and (min-width:768px){
  #menu{
   top:25px;
+  margin-bottom: 125px;
  }
 }
       
@@ -380,19 +382,10 @@ content: ", ";
 }
 @media screen and (max-width:991px){
  #footer{
-  position: relative;
+  /*position: relative;*/
   bottom:20px;
  }
  
-  .home #footer{
-  position: absolute;
-
- }
- 
-  .home #footer.mobile{
-  position: relative;
-
- } 
 
 }
 
